@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent  implements OnInit {
 
+  nombre : string;
+
   constructor() { }
 
   ngOnInit() {}
+  saludar(){
+    console.log("Hola"+ this.nombre);
+  }
 
 }

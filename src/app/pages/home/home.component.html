@@ -4,14 +4,12 @@
   <p>
     home works!
   </p>
-  <a href="/contacto">contacto sin spa</a>
-  <br>
-  <a href="/store">store</a>
-  <br>
-  <br>
-  <a [routerLink]="['/contacto']">Contacto con SPA</a>
-  <br>
-  <a [routerLink]="['/store']">store con SPA</a>
-
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <ion-button (click)="saludar()">
+    Click me
+  </ion-button>
   <app-footer></app-footer>
 </ion-content>
